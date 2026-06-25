@@ -19,7 +19,7 @@ const byDigits = otherString.split(/\d/);
  * */
 function splitify(str) {
   //Solution Code
-  return str.split(/\W/);
+  return str.split(/\W/); // (W) is a RegExpression pattern that matches any none word character.
 
   // Only change code above this line
 }
