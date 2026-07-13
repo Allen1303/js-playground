@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 8 — Variadic Total Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Variadic total calculator</h1>
+    <p class="subtitle">A function that sums however many charges get passed to it (tips, fees, taxes).</p>
+
+    <div class="panel">
+      <label for="charges-input">Charges (comma-separated)</label>
+      <input id="charges-input" type="text" value="10, 5, 2.5" />
+      <div id="total-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>calculateTotal(10, 5, 2.5)</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>calculateTotal()</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

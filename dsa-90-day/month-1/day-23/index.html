@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 23 — Tag Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Tag search</h1>
+    <p class="subtitle">Checking whether a blog post has a specific tag.</p>
+
+    <div class="panel">
+      <label>Post tags</label>
+      <div class="chip-row">
+        <span class="chip">js</span>
+        <span class="chip">css</span>
+      </div>
+      <label for="tag-input">Search tag</label>
+      <input id="tag-input" type="text" value="js" />
+      <div id="tag-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>hasTag(["js","css"], "js")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

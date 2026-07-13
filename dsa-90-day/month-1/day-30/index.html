@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 30 — Log Word Frequency Counter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Log word frequency counter</h1>
+    <p class="subtitle">Analyzing a server log to find the most common words/errors.</p>
+
+    <div class="panel">
+      <label for="text-input">Log text</label>
+      <textarea id="text-input" rows="3">the cat sat on the mat</textarea>
+      <label>Word counts</label>
+      <table class="data-table" id="freq-output"></table>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>wordFrequency("the cat sat on the mat")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

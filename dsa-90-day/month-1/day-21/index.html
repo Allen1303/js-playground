@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 21 — Sales Report Pipeline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Sales report pipeline</h1>
+    <p class="subtitle">A common analytics pipeline: filter relevant records, then transform, then total.</p>
+
+    <div class="panel">
+      <label>Sales records</label>
+      <table class="data-table">
+        <tr><th>Region</th><th>Amount</th></tr>
+        <tr><td>west</td><td>$100</td></tr>
+        <tr><td>east</td><td>$50</td></tr>
+      </table>
+      <label for="region-input">Region</label>
+      <select id="region-input">
+        <option value="west">West</option>
+        <option value="east">East</option>
+      </select>
+      <div id="projection-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>regionProjection(sales, "west")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

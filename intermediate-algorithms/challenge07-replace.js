@@ -17,7 +17,7 @@ if you mean to replace the word Book with the word dog, it should be replaced as
 function myReplace(str, before, after) {
   const regex = /^[A-Z]/.test(before); // binding regex that holds the logic that check for first uppercase letter in a word.
 
-  after === regex
+  after = regex
     ? after[0].toUpperCase() + after.substring(1)
     : after[0].toLowerCase() + after.substring(1);
   return str.replace(before, after);

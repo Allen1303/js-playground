@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 20 — Form Validation Gate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Form validation gate</h1>
+    <p class="subtitle">Checking that every required field passed validation before allowing submit.</p>
+
+    <div class="panel">
+      <label><input id="email-valid" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" checked /> email field valid</label>
+      <label><input id="age-valid" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" checked /> age field valid</label>
+      <div id="form-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>isFormValid([email:true, age:true])</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>isFormValid([email:false])</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 27 — CSV Row Parser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>CSV row parser</h1>
+    <p class="subtitle">Parsing a raw CSV line into fields.</p>
+
+    <div class="panel">
+      <label for="row-input">CSV row</label>
+      <input id="row-input" type="text" value="Sam, 29 , NYC" />
+      <label>Parsed fields</label>
+      <div id="fields-output" class="chip-row"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>parseCsvRow("Sam, 29 , NYC")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

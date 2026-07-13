@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 29 — Anagram Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Anagram checker</h1>
+    <p class="subtitle">Powering a word-game feature that checks if two words are anagrams.</p>
+
+    <div class="panel">
+      <label for="word-a-input">Word A</label>
+      <input id="word-a-input" type="text" value="listen" />
+      <label for="word-b-input">Word B</label>
+      <input id="word-b-input" type="text" value="silent" />
+      <div id="anagram-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>isAnagram("listen", "silent")</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>isAnagram("hello", "world")</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

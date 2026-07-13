@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 2 — Order Total Formatter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Order total formatter</h1>
+    <p class="subtitle">Formatting prices consistently in a checkout flow.</p>
+
+    <div class="panel">
+      <label for="amount-input">Amount</label>
+      <input id="amount-input" type="number" step="0.01" value="19.5" />
+      <div id="price-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>formatPrice(19.5)</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>formatPrice(3)</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 18 — Cart Total Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Cart total calculator</h1>
+    <p class="subtitle">Calculating the total cost of a shopping cart at checkout.</p>
+
+    <div class="panel">
+      <label>Item 1</label>
+      <div class="inline-row">
+        <div><input id="item1-price" type="number" value="10" placeholder="price" /></div>
+        <div><input id="item1-qty" type="number" value="2" placeholder="qty" /></div>
+      </div>
+      <label>Item 2</label>
+      <div class="inline-row">
+        <div><input id="item2-price" type="number" value="5" placeholder="price" /></div>
+        <div><input id="item2-qty" type="number" value="1" placeholder="qty" /></div>
+      </div>
+      <div id="total-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>cartTotal([{10,2},{5,1}])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

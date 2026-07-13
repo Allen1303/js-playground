@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 4 — Membership Discount Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Membership discount checker</h1>
+    <p class="subtitle">Conditional pricing logic for member vs non-member checkout.</p>
+
+    <div class="panel">
+      <label for="member-input"><input id="member-input" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" checked /> Is member</label>
+      <div id="discount-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>getDiscount(true)</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>getDiscount(false)</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

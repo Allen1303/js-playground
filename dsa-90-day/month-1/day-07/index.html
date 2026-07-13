@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 7 — Merge Shopping Carts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Merge shopping carts</h1>
+    <p class="subtitle">Combining two guest carts when a user logs in.</p>
+
+    <div class="panel">
+      <label>Cart A</label>
+      <div id="cart-a-chips" class="chip-row"></div>
+      <label>Cart B</label>
+      <div id="cart-b-chips" class="chip-row"></div>
+      <div class="preset-btns">
+        <button id="example-a-btn" type="button">Example A</button>
+        <button id="example-b-btn" type="button">Example B</button>
+      </div>
+      <label>Merged cart</label>
+      <div id="merge-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>mergeCarts(["shirt"], ["shoes","hat"])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

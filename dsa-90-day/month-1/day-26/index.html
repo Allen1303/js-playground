@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 26 — Blog Title Slugifier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Blog title slugifier</h1>
+    <p class="subtitle">Turning a blog post title into a URL-safe slug.</p>
+
+    <div class="panel">
+      <label for="title-input">Title</label>
+      <input id="title-input" type="text" value="My First Post!" />
+      <div id="slug-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>slugify("My First Post!")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 24 — Flatten Nested Comment Threads</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Flatten nested comment threads</h1>
+    <p class="subtitle">Flattening nested reply threads into a single list for rendering.</p>
+
+    <div class="panel">
+      <div class="preset-btns">
+        <button id="example-a-btn" type="button">Example A</button>
+        <button id="example-b-btn" type="button">Example B</button>
+      </div>
+      <label>Flattened comments</label>
+      <ol id="flat-output" class="list-plain"></ol>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>flattenThreads([["hi","hey"],["yo"]])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

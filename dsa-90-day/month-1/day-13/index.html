@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 13 — Config Object Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Config object builder</h1>
+    <p class="subtitle">Building a config object from separate variables, like assembling request options.</p>
+
+    <div class="panel">
+      <label for="host-input">Host</label>
+      <input id="host-input" type="text" value="api.com" />
+      <label for="port-input">Port</label>
+      <input id="port-input" type="number" value="443" />
+      <label for="secure-input"><input id="secure-input" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" checked /> Secure (https)</label>
+      <div id="config-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>buildConfig("api.com", 443, true).url()</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 25 — Group Orders By Status</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Group orders by status</h1>
+    <p class="subtitle">Grouping orders into buckets (pending/shipped/delivered) for a dashboard view.</p>
+
+    <div class="panel">
+      <label>Orders</label>
+      <table class="data-table">
+        <tr><th>id</th><th>status</th></tr>
+        <tr><td>1</td><td>shipped</td></tr>
+        <tr><td>2</td><td>pending</td></tr>
+        <tr><td>3</td><td>shipped</td></tr>
+      </table>
+      <label>Grouped result</label>
+      <div id="groups-output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>groupByStatus(orders)</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

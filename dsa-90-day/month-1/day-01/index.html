@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 1 — Greeting Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Greeting card generator</h1>
+    <p class="subtitle">Personalizing UI text is everywhere (emails, dashboards, notifications).</p>
+
+    <div class="panel">
+      <label for="name-input">Name</label>
+      <input id="name-input" type="text" value="Sam" />
+      <label for="time-input">Time of day</label>
+      <select id="time-input">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+      </select>
+      <div id="card-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>greetUser("Sam", "morning")</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>greetUser("Ava", "evening")</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

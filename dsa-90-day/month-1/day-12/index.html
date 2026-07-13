@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 12 — Merge User Settings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Merge user settings</h1>
+    <p class="subtitle">Applying user overrides on top of default app settings.</p>
+
+    <div class="panel">
+      <label>Defaults</label>
+      <table class="data-table">
+        <tr><th>theme</th><td>light</td></tr>
+        <tr><th>volume</th><td>5</td></tr>
+      </table>
+      <div class="preset-btns">
+        <button id="override-theme-btn" type="button">Override theme only</button>
+        <button id="override-both-btn" type="button">Override theme + volume</button>
+      </div>
+      <label>Merged settings</label>
+      <div id="merged-output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>mergeSettings({theme:"light",volume:5}, {theme:"dark"})</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

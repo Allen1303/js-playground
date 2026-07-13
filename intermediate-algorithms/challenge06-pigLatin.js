@@ -14,6 +14,8 @@ const pigLatin = (str) => {
   //check if the string start with a vowel.
   if (vowels.has(str[0])) return `${str} way`;
   const chars = [...str].findIndex((char) => vowels.has(char));
+
+  if (chars === -1) return `${str}ay`; //Handle edge cases for words with no vowels.
   return `${str.slice(chars)}${str.slice(0, chars)}ay`;
 };
 console.log(pigLatin("javascript"));

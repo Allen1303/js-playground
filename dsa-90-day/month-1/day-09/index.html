@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 9 — Playlist Skip Track</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Playlist skip track</h1>
+    <p class="subtitle">Removing an item from a playlist without mutating the original array.</p>
+
+    <div class="panel">
+      <label>Current playlist</label>
+      <div id="playlist-chips" class="chip-row"></div>
+      <label for="index-input">Index to remove</label>
+      <input id="index-input" type="number" value="1" min="0" />
+      <label>Result</label>
+      <div id="playlist-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>removeTrack(["a","b","c"], 1)</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

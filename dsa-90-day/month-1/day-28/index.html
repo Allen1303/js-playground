@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 28 — Username Padder/Validator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Order id padder</h1>
+    <p class="subtitle">Standardizing display IDs, like zero-padding order numbers.</p>
+
+    <div class="panel">
+      <label for="num-input">Order number</label>
+      <input id="num-input" type="number" value="42" min="0" />
+      <div id="order-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>formatOrderId(42)</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

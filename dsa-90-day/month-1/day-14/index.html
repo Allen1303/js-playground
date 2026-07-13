@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 14 — Dynamic Form Field Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Dynamic form field builder</h1>
+    <p class="subtitle">Building an object where the key name itself is a variable (e.g. form field names from a schema).</p>
+
+    <div class="panel">
+      <label for="field-name-input">Field name</label>
+      <input id="field-name-input" type="text" value="username" />
+      <label for="field-value-input">Value</label>
+      <input id="field-value-input" type="text" value="allen" />
+      <div id="field-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>buildField("username", "allen")</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

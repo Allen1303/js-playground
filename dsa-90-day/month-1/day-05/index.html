@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 5 — Login Attempt Message</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Login attempt message</h1>
+    <p class="subtitle">Combining several ES6 features into one small utility, like a login form would.</p>
+
+    <div class="panel">
+      <label for="username-input">Username</label>
+      <input id="username-input" type="text" value="allen" />
+      <label for="attempts-input">Attempts left (blank = default)</label>
+      <input id="attempts-input" type="number" placeholder="3" />
+      <div id="login-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>loginMessage("allen")</span><span id="badge-1" class="badge"></span></div>
+      <div class="test-row"><span>loginMessage("allen", 1)</span><span id="badge-2" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 16 — Price List Transformer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Price list transformer</h1>
+    <p class="subtitle">Applying a tax rate across every product price for display.</p>
+
+    <div class="panel">
+      <label for="prices-input">Prices (comma-separated)</label>
+      <input id="prices-input" type="text" value="10, 20" />
+      <label>Before / after (8% tax)</label>
+      <table class="data-table" id="prices-table"></table>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>applyTax([10, 20])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

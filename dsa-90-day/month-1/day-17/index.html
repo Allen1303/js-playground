@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 17 — Active Users Filter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Active users filter</h1>
+    <p class="subtitle">Showing only currently active users in an admin dashboard.</p>
+
+    <div class="panel">
+      <label><input id="user-a-active" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" checked /> User A — active</label>
+      <label><input id="user-b-active" type="checkbox" style="width:auto; display:inline-block; margin-right:8px;" /> User B — active</label>
+      <label>Active users</label>
+      <div id="active-output" class="chip-row"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>activeUsers([{A,true},{B,false}])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

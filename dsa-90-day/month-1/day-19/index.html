@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 19 — Find User By ID</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Find user by ID</h1>
+    <p class="subtitle">Looking up a specific record, like fetching one user's profile.</p>
+
+    <div class="panel">
+      <label>Users</label>
+      <div class="chip-row">
+        <span class="chip">id:1 A</span>
+        <span class="chip">id:2 B</span>
+      </div>
+      <label for="id-input">Search id</label>
+      <input id="id-input" type="number" value="2" />
+      <div id="user-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>findUserById(users, 2)</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

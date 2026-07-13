@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 22 — Leaderboard Sorter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Leaderboard sorter</h1>
+    <p class="subtitle">Sorting players by score, highest first, for a leaderboard.</p>
+
+    <div class="panel">
+      <label for="player-a-score">Player A score</label>
+      <input id="player-a-score" type="number" value="10" />
+      <label for="player-b-score">Player B score</label>
+      <input id="player-b-score" type="number" value="30" />
+      <label>Leaderboard</label>
+      <ol id="leaderboard-output" class="list-plain"></ol>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>leaderboard([{A,10},{B,30}])</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

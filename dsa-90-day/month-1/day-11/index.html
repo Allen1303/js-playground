@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 11 — API Response Unpacker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>API response unpacker</h1>
+    <p class="subtitle">Pulling only the fields you need out of a large API payload.</p>
+
+    <div class="panel">
+      <label for="id-input">id</label>
+      <input id="id-input" type="number" value="1" />
+      <label for="email-input">email</label>
+      <input id="email-input" type="text" value="a@b.com" />
+      <label for="extra-input">extra (ignored by the function)</label>
+      <input id="extra-input" type="text" value="true" disabled />
+      <div id="summary-output" class="output"></div>
+    </div>
+
+    <div class="tests">
+      <div class="test-row"><span>getUserSummary({id:1, email:"a@b.com", extra:true})</span><span id="badge-1" class="badge"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
